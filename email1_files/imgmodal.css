@@ -12,7 +12,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 10px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -26,8 +26,9 @@
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: auto;
   max-width: 700px;
+  height: 100vh;
 }
 
 /* Caption of Modal Image */
@@ -81,7 +82,7 @@
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
-    width: 100%;
+    width: auto;
   }
 }
 
