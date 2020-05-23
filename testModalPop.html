@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="files/imgmodal.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+
+
+<!--  <button id="myBtnBB">Open Modal</button>
+<a href="#" id="myBtnBB">Open Modal</a>  -->
+<img src="https://real-ipa.com/files/Real-IPA_banner.png" id="myBtnBB"> </img>
+
+<!-- The ModalBB -->
+<div id="myModalBB" class="modalBB">
+  <div class="modal-contentBB">
+    <span class="closeBB">&times;</span>
+    <p>Please share with your friends.</p>
+    <p> CLICK HERE </p>
+</div>
+</div>
+
+
+<script>
+
+// Get the modalBB
+var modalBB = document.getElementById("myModalBB");
+// Get the button that opens the modalBB
+var btnBB = document.getElementById("myBtnBB");
+// Get the <span> element that closes the modalBB
+var spanBB = document.getElementsByClassName("closeBB")[0];
+// When the user clicks the button, open the modalBB
+btnBB.onclick = function() {
+  modalBB.style.display = "block";
+  setTimeout(" window.open('https://real-ipa.com', '_blank');",3000);  // in 3000 milliseconds
+  //window.open("https://real-ipa.com","_blank");
+}
+// When the user clicks on <span> (x), close the modalBB
+spanBB.onclick = function() {
+  modalBB.style.display = "none";
+}
+// When the user clicks anywhere outside of the modalBB, close it
+window.onclick = function(event) {
+  if (event.target == modalBB) {
+    modalBB.style.display = "none";
+  }
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
