@@ -86,3 +86,22 @@
   }
 }
 
+
+
+/* for fb vs whatsapp*/
+.visible-on-mobile {
+  display: none;
+}
+
+.visible-on-desktop {
+  display: inline;
+}
+
+@media only screen and (max-width: 640px) {
+  .visible-on-mobile {
+    display: inline;
+  }
+  .visible-on-desktop {
+    display: none;
+  }
+}
