@@ -126,18 +126,18 @@
 
 /* Modal Content */
 .modal-contentBB {
-  background-color: #C0C0C0;
+  background-color: lightgrey;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 40vh;
   max-width: 700px;
-  height: 40vh;
+  height: auto;
 }
 
 /* The Close Button */
 .closeBB {
-  color: #aaaaaa;
+  color: #000;
   float: right;
   font-size: 28px;
   font-weight: bold;
